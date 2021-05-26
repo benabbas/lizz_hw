@@ -14,7 +14,7 @@ mydb = myclient["mydatabase"]
 mycol = mydb["key"]
 
 
-@app.route('/posthelloworld',methods=['GET','POST'])
+@app.route('/',methods=['GET','POST'])
 def entry_point():
     data = request.get_json() #this part is fect the value from the body
     result = publisher.publisher(data['key'])
